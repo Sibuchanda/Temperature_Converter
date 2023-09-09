@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TempCal</title>
+    <link href="style.css" rel="stylesheet">
+</head>
+
+<body>
+
+
+
+    <div class="container">
+
+
+        <form id="calculator" onsubmit="CalculateTemp(); return false">
+
+
+            <h1 id="heading"> TEMPERATURE CONVERTER </h1>
+
+            <input type="number" id="input_val" placeholder="Enter the value of temperature in number">
+            <!-- <hr id="first_hr"> -->
+
+
+            <div class="select_area">
+
+
+                <div class="from">
+                    <span id="form"> From </span> <br />
+
+                    <select name="temperature_from" id="temp_from">
+                        <option value="Celsius" id="cel"> Celsius </option>
+                        <option value="Fahrenheit" id="fah"> Fahrenheit</option>
+                        <option value="Kelvin" id="kal"> Kelvin</option>
+
+                    </select>
+
+                </div>
+
+
+
+                <div class="to">
+                    <span id="to"> To </span> <br />
+
+                    <select name="temperature_to" id="temp_to">
+                        <option value="Celsius" id="cel"> Celsius </option>
+                        <option value="Fahrenheit" id="fah"> Fahrenheit</option>
+                        <option value="Kelvin" id="kal"> Kelvin</option>
+
+                    </select>
+
+                </div>
+
+
+            </div>
+
+            <div class="submit_area">
+                
+                <!-- <input type="submit" name="submit_button" id="submit"> -->
+                <button id="submit" name="submit_button"> CONVERT</button>
+            </div>
+
+
+            <div class="result">
+                <span id="result_heading"> Result</span>
+                <span id="resultValue"></span>
+                <hr id="second_hr">
+
+            </div>
+
+
+        </form>
+
+
+
+
+    </div>
+
+
+    <script src="main.js"></script>
+</body>
+
+</html>
